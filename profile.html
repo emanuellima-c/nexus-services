@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+    <title>Perfil | NEXUS</title>
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">
+        NEXUS
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Início
+        </a>
+
+        <a href="servicos.html">
+            Serviços
+        </a>
+
+        <a href="perfil.html">
+            Perfil
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="home">
+
+    <section class="login-card">
+
+        <h1>
+            Meu Perfil
+        </h1>
+
+        <p>
+            Usuário conectado:
+        </p>
+
+        <h2 id="usuario">
+            Carregando...
+        </h2>
+
+        <br>
+
+        <button
+            class="btn-primary"
+            onclick="logout()"
+        >
+            SAIR
+        </button>
+
+    </section>
+
+</main>
+
+<script>
+
+    const usuario =
+        localStorage.getItem("usuario");
+
+    document.getElementById("usuario")
+        .textContent =
+        usuario || "Visitante";
+
+
+    function logout() {
+
+        localStorage.removeItem("usuario");
+
+        window.location.href =
+            "login.html";
+
+    }
+
+</script>
+
+</body>
+
+</html>
