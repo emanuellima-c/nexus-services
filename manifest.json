@@ -1,0 +1,25 @@
+{
+  "name": "CHAMA Serviços",
+  "short_name": "CHAMA",
+  "description": "Chama quem resolve — encontre profissionais de confiança perto de você.",
+  "start_url": "index.html",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#15110d",
+  "theme_color": "#15110d",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,73 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>NEXUS | Login</title>
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#15110d" />
+  <title>CHAMA | Entrar</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192.png" />
 </head>
-
 <body>
+  <main class="login-container">
+    <div class="login-card corner-card">
+      <div class="logo">
+        <span class="logo-flame">🔥</span>
+        CH<span>AMA</span>
+      </div>
 
-    <main class="login-container">
+      <p class="subtitle">Chama quem resolve.</p>
 
-        <div class="login-card">
+      <h1>Entrar na conta</h1>
 
-            <div class="logo">
-                NEXUS
-            </div>
-
-            <p class="subtitle">
-                Serviços conectados ao futuro.
-            </p>
-
-            <h1>Bem-vindo</h1>
-
-            <form id="loginForm">
-
-                <div class="input-group">
-                    <label>E-mail</label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="seu@email.com"
-                        required
-                    >
-                </div>
-
-                <div class="input-group">
-                    <label>Senha</label>
-
-                    <input
-                        type="password"
-                        id="senha"
-                        placeholder="Digite sua senha"
-                        required
-                    >
-                </div>
-
-                <button type="submit" class="btn-primary">
-                    ENTRAR
-                </button>
-
-            </form>
-
-            <p class="register">
-                Ainda não possui conta?
-                <a href="#">Criar conta</a>
-            </p>
-
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="seu@email.com" required />
         </div>
 
-    </main>
+        <div class="input-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" placeholder="Digite sua senha" required />
+        </div>
 
-    <script src="js/script.js"></script>
+        <button type="submit" class="btn-primary">Entrar</button>
+      </form>
 
+      <p class="register">
+        Ainda não tem conta? <a href="#">Criar conta</a>
+      </p>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
-
 </html>

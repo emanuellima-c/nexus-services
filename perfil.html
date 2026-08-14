@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#15110d" />
-  <title>Serviços | CHAMA</title>
+  <title>Perfil | CHAMA</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="icons/icon-192.png" />
@@ -22,16 +22,32 @@
     </nav>
   </header>
 
-  <div class="page-head">
-    <span class="eyebrow">Profissionais disponíveis</span>
-    <h1>Encontre um profissional</h1>
-    <p>Filtre por categoria e veja avaliações de quem já contratou.</p>
+  <main class="profile-wrap">
+    <section class="profile-card corner-card">
+      <div class="profile-avatar" id="profileInitial">?</div>
 
-    <div class="filters" id="filterChips"></div>
-  </div>
+      <h1>Meu perfil</h1>
+      <p class="lead">Usuário conectado</p>
 
-  <main class="home" style="padding-top: 10px">
-    <div class="pro-grid" id="proGrid"></div>
+      <div class="profile-email" id="usuario">Carregando...</div>
+
+      <div class="profile-list">
+        <div class="profile-list-item">
+          <span>Solicitações enviadas</span>
+          <strong>0</strong>
+        </div>
+        <div class="profile-list-item">
+          <span>Categoria favorita</span>
+          <strong>Elétrica</strong>
+        </div>
+        <div class="profile-list-item">
+          <span>Cidade</span>
+          <strong>Curitiba, PR</strong>
+        </div>
+      </div>
+
+      <button class="btn-secondary" onclick="logout()">Sair da conta</button>
+    </section>
   </main>
 
   <footer class="footer">CHAMA Serviços — protótipo de estudo, sem back-end real.</footer>
